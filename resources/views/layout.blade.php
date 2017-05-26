@@ -63,11 +63,11 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                margin-bottom: 15px;
             }
 
             .row{
-              margin-top:70px;
+              margin-top:30px;
             }
         </style>
         <!-- CSS Bootstrap Style -->
