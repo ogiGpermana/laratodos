@@ -20,7 +20,8 @@ Route::get('/new', [
 ]);
 
 Route::get('/todos', [
-  'uses' => 'TodosController@index'
+  'uses' => 'TodosController@index',
+  'as' => 'todos'
 ]);
 
 Route::get('/todo/delete/{id}', [
