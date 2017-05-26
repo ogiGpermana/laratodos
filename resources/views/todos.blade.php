@@ -13,7 +13,11 @@
     <div class="content">
         <div class="title m-b-md">
            @foreach($todos as $todo)
+           @if(!$todo->completed)
            {{$todo->todo}}
+           @else
+           <del>{{$todo->todo}}</del>
+           @endif
            <a href="{{ route('todo.delete', ['id' => $todo->id]) }}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
            <a href="{{ route('todo.update', ['id' => $todo->id]) }}" class="btn btn-info"><i class="fa fa-edit"></i></a>
            @if(!$todo->completed)
