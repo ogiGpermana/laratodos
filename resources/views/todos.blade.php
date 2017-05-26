@@ -13,7 +13,9 @@
     <div class="content">
         <div class="title m-b-md">
            @foreach($todos as $todo)
-           {{$todo->todo}} <a href="{{ route('todo.delete', ['id' => $todo->id]) }}" class="btn btn-danger">x</a>
+           {{$todo->todo}}
+           <a href="{{ route('todo.delete', ['id' => $todo->id]) }}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+           <a href="{{ route('todo.update', ['id' => $todo->id]) }}" class="btn btn-info"><i class="fa fa-edit"></i></a>
            <hr>
            @endforeach
         </div>
